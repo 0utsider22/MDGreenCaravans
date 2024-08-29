@@ -1,0 +1,110 @@
+/* Mobile First View */
+
+
+
+main > section {
+    color: black;
+    background-color: white;
+    border-radius: 15px;
+    font: 30px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+main > section:hover {
+    filter: brightness(90%);
+}
+
+main > section > h2 {
+    font-size: 24px;
+    font-weight: normal;
+    text-align: center;
+}
+
+main > section > p {
+    font-size: 18px;
+    text-align: center;
+    line-height: 1.5;
+    
+}
+
+
+
+main {
+    background-color: black;
+    display: grid;
+    grid-template-areas:
+    "."
+    "."
+    "."
+    "."
+    "."
+    ".";
+    gap: 10px;
+    box-sizing: border-box;
+    margin: 10px;
+}
+
+main a {
+    color: black;
+}
+
+main a:visited {
+    color: black;
+}
+
+main a:hover {
+    color: grey;
+}
+
+main a:focus {
+    color: grey;
+    outline: none;
+}
+
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+    main {
+        margin-left: 10px;
+        margin-right: -2px;
+    }
+
+    main > #container1 {
+        grid-area: area1;
+    }
+
+    main > #container2 {
+        grid-area: area2;
+    }
+    main > #container3 {
+        grid-area: area3;
+    }
+    
+    main > #container4 {
+        grid-area: area4;
+    }
+
+    main > #container5 {
+        grid-area: area5;
+    }
+
+    main > #container6 {
+        grid-area: area6;
+    }
+
+    main {
+        grid-template-areas: 
+        "area1 area3 area4"
+        "area2 area3 area4"
+        "area5 area6 area4";
+        grid-template-columns: calc(35% - 13.33px) calc(37% - 13.33px) calc(28% - 13.33px);
+        
+    }
+
+}

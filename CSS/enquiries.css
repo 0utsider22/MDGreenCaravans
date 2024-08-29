@@ -1,0 +1,88 @@
+form {
+    background-color: grey;
+    border-radius: 15px;
+    margin: 20px auto;
+    padding: 35px;
+    width: 90%;
+}
+
+input {
+    border: 2.5px solid rgb(90, 90, 90);
+    border-radius: 15px;
+    display: inline-block;
+    margin: 8px 0px;
+    padding: 12px 20px;
+    width: 100%;
+}
+
+input:hover {
+    filter: brightness(75%);
+}
+
+input:focus {
+    outline: none;
+    filter: brightness(75%);
+}
+
+textarea {
+    border: 2.5px solid rgb(90, 90, 90);
+    border-radius: 15px;
+    height: 180px;
+    width: 100%;
+    resize: none;
+    padding: 12px 20px;
+    margin: 8px 0;
+}
+
+textarea:hover {
+    filter: brightness(75%);
+}
+
+textarea:focus {
+    outline: none;
+    filter: brightness(90%);
+}
+
+button {
+    background-color: #2a6592;
+    border: none;
+    border-radius: 15px;
+    color: white;
+    cursor: pointer;
+    margin: 8px 0;
+    padding: 14px 20px;
+    width: 100%;
+}
+
+button:focus, 
+button:hover {
+    filter: brightness(75%);
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    form {
+        width: 70%;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    form {
+        width: 50%;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    form {
+        width: 40%;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    form {
+        width: 30%;
+    }
+}

@@ -1,0 +1,208 @@
+/* Mobile First View */
+
+
+aside {
+    background-color: white;
+    color: black;
+    font-size: 120%;
+    padding: 5px 0px;
+    text-align: center;
+    width: 100%;
+    display: block;
+    border-radius: 0 0 15px 15px;
+    order: 2;
+    
+}
+
+aside:hover {
+    filter: brightness(90%);
+}
+
+article:hover {
+    filter: brightness(90%);
+}
+
+#main_image:hover {
+    filter: brightness(90%);
+}
+
+#main_image {
+    width: 100%;
+    order: 2;
+}
+
+
+article {
+    background-color:rgb(224, 239, 167);
+    color: black;
+    font-size: 100%;
+    padding: 0px 10px;
+    order: 1;
+    text-align: center;
+    border-radius: 15px 15px 0 0;
+}
+
+main {
+    flex-direction: column;
+    display: flex;
+    line-height: 1.5;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+aside a {
+    color: black;
+    display: block;
+    padding: 5px 0px;
+    text-decoration: none;
+    width: 100%;
+}
+
+#coromal_link {
+    color: black;
+}
+
+#coromal_link:visited {
+    color: black;
+}
+
+#coromal_link:hover {
+    color: grey;
+}
+
+#coromal_link:focus {
+    color: grey;
+    outline: none;
+}
+
+
+aside a:hover {
+    background-color: black;
+    color: white;
+}
+
+aside a:focus {
+    background-color: black;
+    color: white;
+    outline: none;
+}
+
+section {
+    flex-direction: column;
+    display: flex;
+}
+
+
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    main {
+        display: grid;
+        grid-template-columns: 65% 35%;
+        height: auto;
+        margin-left: 10px;
+        margin-right: 12px;
+        margin-top: 10px;
+    }
+
+    aside {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* Center content vertically */
+        order: 2;
+        border-radius: 0 15px 15px 0;
+        font-size: 18px;
+        height: 100%; /* Ensure aside takes the full height */
+    }
+
+    aside p {
+        flex-grow: 1; /* Make the paragraph stretch to fill the aside */
+        margin: 0; /* Remove default margins if needed */
+        display: flex;
+        align-items: center; 
+        justify-content: center;
+        line-height: 1.4;
+    }
+
+    section {
+        order: 1;
+    }
+
+    #main_image {
+        border-radius: 0 0 0 15px;
+    }
+
+    article {
+        border-radius: 15px 0 0 0;
+    }
+}
+
+@media only screen and (min-width: 810px) {
+    aside p {
+        line-height: 1.6;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    aside p {
+        line-height: 1.8;
+    }
+}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    main {
+        display: grid;
+        grid-template-columns: 65% 35%;
+        height: auto;
+    }
+
+    aside {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        order: 2;
+        font-size: 18px;
+        height: 100%;
+    }
+
+    aside p {
+        flex-grow: 1;
+        margin: 0;
+        display: flex;
+        position: sticky;
+        align-items: center;
+        justify-content: center;
+        line-height: 2;
+    }
+
+    section {
+        order: 1;
+    }
+
+    @media only screen and (min-width: 1150px) {
+        aside p {
+            line-height: 2.2;
+        }
+        
+        main {
+            grid-template-columns: 70% 30%;
+        }
+    }
+
+    @media only screen and (min-width: 1300px) {
+        aside p {
+            line-height: 2.5;
+        }
+        main {
+            grid-template-columns: 75% 25%;
+            }
+    }
+    @media only screen and (min-width: 1465px) {
+        aside p {
+            line-height: 2.8;
+        }
+    }
+}
